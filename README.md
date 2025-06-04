@@ -18,7 +18,7 @@ Un petit scheduler TypeScript basé sur `cron`, capable d’exécuter des requê
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/ton-utilisateur/pg-cron-ts.git
+git clone https://github.com/MaxVzl/pg-cron-ts.git
 cd pg-cron-ts
 ```
 
@@ -32,8 +32,7 @@ pg-cron-ts/
 │   ├── epurate.json  # Configuration de la tâche
 │   └── epurate.sql   # Requête SQL associée
 ├── Dockerfile
-├── docker-compose.yml
-└── .env              # Variables d’environnement globales (optionnel)
+└── docker-compose.yml
 ```
 
 ## ⚙️ Exemple de configuration de job
@@ -67,7 +66,12 @@ SELECT NOW() AS current_time;
 ### 🔧 Lancer avec Docker Compose
 
 ```bash
-docker-compose up --build
+docker-compose up -d --build
+```
+
+### 🛑 Arrêter et nettoyer les conteneurs
+```bash
+docker-compose down -v
 ```
 
 Cela lancera :
@@ -78,7 +82,8 @@ Cela lancera :
 
 ```bash
 npm install
-ts-node src/index.ts
+npm run build
+npm run start
 ```
 
 ## ✨ Dépendances principales
