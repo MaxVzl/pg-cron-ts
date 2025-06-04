@@ -1,0 +1,21 @@
+{
+  "name": "pg-cron-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cron": "^4.3.0",
+    "cronstrue": "^2.61.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/pg": "^8.15.4",
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
