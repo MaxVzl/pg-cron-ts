@@ -46,7 +46,7 @@ pg-cron-ts/
   "expression": "* * * * * *",
   "pg_user": "postgres",
   "pg_password": "postgres",
-  "pg_host": "postgres",
+  "pg_host": "localhost",
   "pg_port": "5432",
   "pg_database": "postgres",
   "script": "epurate.sql",
